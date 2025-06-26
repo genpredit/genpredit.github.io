@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Genética</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔬 Calculadora Genética de Hijos</h1>
+
+    <form id="geneticForm">
+      <h2>Características del Padre</h2>
+      <label for="padreOjos">Color de ojos:</label>
+      <select id="padreOjos" required>
+        <option value="">Seleccione</option>
+        <option value="marron">Marrón</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+      </select>
+
+      <label for="padreCabello">Tipo de cabello:</label>
+      <select id="padreCabello" required>
+        <option value="">Seleccione</option>
+        <option value="liso">Liso</option>
+        <option value="ondulado">Ondulado</option>
+        <option value="rizado">Rizado</option>
+      </select>
+
+      <label for="padreDensidad">Densidad de cabello:</label>
+      <select id="padreDensidad" required>
+        <option value="">Seleccione</option>
+        <option value="abundante">Abundante</option>
+        <option value="media">Media</option>
+        <option value="poca">Poco cabello</option>
+      </select>
+
+      <label for="padreNariz">Tamaño de nariz:</label>
+      <select id="padreNariz" required>
+        <option value="">Seleccione</option>
+        <option value="grande">Grande</option>
+        <option value="media">Media</option>
+        <option value="pequena">Pequeña</option>
+      </select>
+
+      <label for="padreContextura">Contextura:</label>
+      <select id="padreContextura" required>
+        <option value="">Seleccione</option>
+        <option value="gruesa">Gruesa</option>
+        <option value="media">Media</option>
+        <option value="delgada">Delgada</option>
+      </select>
+
+      <label for="padrePiel">Tono de piel:</label>
+      <select id="padrePiel" required>
+        <option value="">Seleccione</option>
+        <option value="clara">Claro</option>
+        <option value="media">Medio</option>
+        <option value="oscura">Oscuro </option>
+      </select>
+
+      <label for="alturaPadre">Estatura cm:</label>
+      <input type="number" id="alturaPadre" min="100" max="250" required />
+   
+
+
+      <h2>Características de la Madre</h2>
+      <label for="madreOjos">Color de ojos:</label>
+      <select id="madreOjos" required>
+        <option value="">Seleccione</option>
+        <option value="marron">Marrón</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+      </select>
+
+      <label for="madreCabello">Tipo de cabello:</label>
+      <select id="madreCabello" required>
+        <option value="">Seleccione</option>
+        <option value="liso">Liso</option>
+        <option value="ondulado">Ondulado</option>
+        <option value="rizado">Rizado</option>
+      </select>
+
+      <label for="madreDensidad">Densidad de cabello:</label>
+      <select id="madreDensidad" required>
+        <option value="">Seleccione</option>
+        <option value="abundante">Abundante</option>
+        <option value="media">Media</option>
+        <option value="poca">Poco cabello</option>
+      </select>
+
+      <label for="madreNariz">Tamaño de nariz:</label>
+      <select id="madreNariz" required>
+        <option value="">Seleccione</option>
+        <option value="grande">Grande</option>
+        <option value="media">Media</option>
+        <option value="pequena">Pequeña</option>
+      </select>
+
+      <label for="madreContextura">Contextura:</label>
+      <select id="madreContextura" required>
+        <option value="">Seleccione</option>
+        <option value="gruesa">Gruesa</option>
+        <option value="media">Media</option>
+        <option value="delgada">Delgada</option>
+      </select>
+
+      <label for="madrePiel">Tono de piel:</label>
+      <select id="madrePiel" required>
+        <option value="">Seleccione</option>
+        <option value="clara">Claro</option>
+        <option value="media">Medio</option>
+        <option value="oscura">Oscuro </option>
+      </select>
+
+      <label for="alturaMadre">Estatura cm:</label>
+      <input type="number" id="alturaMadre" min="100" max="250" required />
+
+      <h2>Sexo del hijo</h2>
+      <label for="sexoHijo">Sexo del hijo:</label>
+      <select id="sexoHijo" required>
+        <option value="">Seleccione</option>
+        <option value="masculino">Niño</option>
+        <option value="femenino">Niña</option>
+      </select>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado">
+      <!-- Aquí aparecerán los resultados -->
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 Genpredit - Proyecto educativo creado por Ruayan Linares</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
